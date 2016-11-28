@@ -1,0 +1,18 @@
+<div class="wrapper"  *ngIf="auth.authenticated() && auth.userProfile">
+    <form class="post">
+        <div class="form-group">
+            <input [(ngModel)]="txtTitle" class="title" type="text" placeholder="Title" name="title" maxlength="50"  required/>
+            <textarea [(ngModel)]="txtDescription" class="body" type="text" placeholder="description" rows="5" cols="15" name="description"  required></textarea>
+        </div>
+        <button type="submit" (click)="addPost()">Post</button>
+    </form>
+    <table class="posts">
+        <tr *ngFor="let Post of myPosts">
+            <td>
+                <p class="title">{{Post.title}}<span class="red-x" (click)="delete(post)">&#10006;</span></p>
+                <p class="body">{{Post.description}}</p>
+                <p class="timestamp">{{Post._id.creationTime | date:'medium'}}</p>
+            </td>
+        </tr>
+    </table>
+</div>

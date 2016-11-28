@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML>
+
+<body>
+        <div class="aboutLGR">
+            <article class="about">
+                <div class="title"><h1>About LGR</h1></div>
+                    <h2><u>News</u></h2>
+                    <p style="font-size:18px;">Keep up on todays politics, and controversial events</p>   
+                    <h2><u>Voice</u></h2>
+                    <p style="font-size:18px;">Post and vote <b>YOUR</b> opinions</p>
+                    <h2><u>Connections</u></h2>  
+                    <p style="font-size:18px;">Connect to others with the same moral and ethical values as yourself</p> 
+            </article>
+        </div>
+        <div class="signup">
+            <article class="signupContent">
+                <div class="signupTitle">
+                    <h1>Sign Up or </h1> <a class="loginbtn"  (click)="auth.login()" *ngIf="!auth.authenticated()">Log In</a>
+                </div>
+                <form class="signUpForm">
+                     <div class="form-group">
+                        <label for="fname">First Name</label>
+                         <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="form-control" id="alterEgo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="alterEgo">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="alterEgo">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </article>
+        </div>
+</body>

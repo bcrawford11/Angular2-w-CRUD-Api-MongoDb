@@ -1,0 +1,47 @@
+﻿.header{
+    background-color: black;
+    height:40px;
+    color:white;
+    font-size: 20px;
+    padding:0;
+}
+.welcome{
+    margin: auto;
+    text-align: center;
+    color: white;
+    float:left;
+}
+.drp{
+    float:right;
+    margin:auto;
+    background-color: transparent !important;
+}
+.btn{
+    float:right;
+    background-color: transparent !important;
+    border: none;
+    text-decoration: none;
+    height: 40px;
+}
+.btn:active{
+    outline: none;
+}
+.logout_btn:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    color: #e6e6e6;
+}
+.secondary{
+    float:right;
+    border-right: solid 1px #e6e6e6;
+}
+.secondary:focus{
+    outline: none;
+}
+.dropdown-toggle:focus{
+    background-color: transparent !important;
+}
+.dropdown-toggle:active{
+    background-color: transparent !important;
+}

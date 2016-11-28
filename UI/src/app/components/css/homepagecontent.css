@@ -1,0 +1,48 @@
+body{
+    display:flex;
+    margin:auto;
+    width:70%;
+    margin-top: 40px;
+    justify-content: center;
+}
+.aboutLGR{
+    float: left;
+    width: 300px;
+    border:solid 2px black;
+    border-radius: 10px;
+    background-color: #BFBFBF;
+    margin-right: 60px;
+}
+.about{
+    text-align: center;
+    padding:5px;
+}
+.signup{
+    border:solid 2px black;
+    border-radius: 10px;
+    background-color: #BFBFBF; 
+    padding:5px;
+}
+.signupTitle{
+    border-bottom: solid 1px black;
+    display: flex;
+}
+.title{
+    border-bottom: solid 1px black;    
+}
+.loginbtn{
+    margin:auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:5px;
+    background-color: #337ab7;
+    color:white;
+    border:solid 1px #337ab7; 
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 25px;
+}
+.loginbtn:hover{
+    background-color: #3333ff
+}

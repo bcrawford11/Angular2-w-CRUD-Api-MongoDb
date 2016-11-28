@@ -1,0 +1,38 @@
+
+.post{
+    width: 500px;
+    margin: 30px auto;
+}
+.posts{
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 18px;
+    width: 500px;
+}
+.body{
+    font-size: 12px;
+    width: 500px;
+    height: auto;
+    resize: none;
+    word-break: break-all;
+}
+.timestamp{
+    text-align: right;
+}
+.deletebtn{
+    float :right;
+    background-color: #ff3333;
+    color: white;
+}
+.postbtn{
+    float: right;
+}
+.red-x{
+    cursor: pointer;
+    float: right;
+}
+.red-x:hover{
+    cursor: pointer;
+}
