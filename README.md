@@ -14,7 +14,7 @@ Currently this project is in development and all function may or may not run.
 # Current working Features in Project
   -Authentication
   
-  -Posting Capabilities
+  -Posting Capabilities Creating new Posts and storing in MongoDb
   
 # Sources worth mentioning
   -Authentication was built off Auth0 official docs found here https://auth0.com/docs/quickstart/spa/angular2
