@@ -7,9 +7,9 @@ Currently this project is in development and all function may or may not run.
   
     -Authentication is managed by Auth0
     
-  -.Net Core web api backend
+  -.Net Core CRUD web api backend
   
-    -Mongodb to manage Posting capabilities
+    -Create is the only CRUD operator currently working
     
 # Current working Features in Project
   -Authentication
