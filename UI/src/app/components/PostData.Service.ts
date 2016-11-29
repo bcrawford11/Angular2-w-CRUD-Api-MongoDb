@@ -31,10 +31,9 @@ export class PostDataService{
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
         console.log(this.actionUrl);
-         return this._http.post(this.actionUrl, JSON.stringify(post))
-            .map((res: Response) => {
-                return res.json();
-            })
+         return this._http.post(this.actionUrl, JSON.stringify(post),
+         {headers: headers})
+            .map(res => res.json())
             .catch(this.handleError);
     }
  
