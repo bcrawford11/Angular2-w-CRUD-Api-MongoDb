@@ -1,4 +1,4 @@
-# Angular2-w-mongoApi
+# Angular2-w-MongoApi
 This is a single page web application built on .net core with angular 2 UI and a mongodb. The mongodb is managed by a .net core web api.
 Currently this project is in development and all function may or may not run.
 
