@@ -35,21 +35,13 @@ export class PostRantComponent implements OnInit {
       this.newPost = new PostViewModel();
       this.newPost.title = this.txtTitle;
       this.newPost.description = this.txtDescription;
-      JSON.stringify(this.newPost);
-      this._dataservice.Add(this.newPost);
+      this._dataservice.Add(this.newPost)
+      .subscribe((res) => {
+        this.newPost.title = '';
+        this.newPost.description = '';
+      })
     }
-
-    //addPost(post){
-    //    if(this.newPost != null && 
-    //        post &&
-     //       this.newPost.title.length>=1 &&
-      //      this.newPost.description.length>=1 &&
-       //     this.newPost.title.length<=50){
-        //        this.posts.unshift(this.newPost);
-        //        this.newPost = new Post();
-        //        return false;
-     //   }
-//    }   
+    
     delete(Post){
         this._dataservice.Delete;
    }
