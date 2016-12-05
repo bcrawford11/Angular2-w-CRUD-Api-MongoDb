@@ -9,6 +9,7 @@ namespace MongoApi.Models
 {
     public class Post
     {
+            [BsonId]
             public ObjectId _id { get; set; }
             [BsonElement("Title")]
             public string Title { get; set; }
