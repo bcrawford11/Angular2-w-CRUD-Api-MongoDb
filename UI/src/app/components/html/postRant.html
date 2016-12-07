@@ -9,7 +9,7 @@
     <table class="posts">
         <tr *ngFor="let Post of myPosts">
             <td>
-                <p class="title">{{Post.title}}<span class="red-x" (click)="delete(post._id)">&#10006;</span></p>
+                <p class="title">{{Post.title}}<span class="red-x" (click)="delete(Post.Id)">&#10006;</span></p>
                 <p class="body">{{Post.description}}</p>
                 <p class="timestamp">{{Post._id.creationTime | date:'medium'}}</p>
             </td>
