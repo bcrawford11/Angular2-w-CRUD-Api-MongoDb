@@ -9,7 +9,7 @@ Currently this project is in development and all function may or may not run.
     
   -.Net Core CRUD web api backend
   
-    -Create is the only CRUD operator currently working
+    -Create and Delete are the only CRUD operators currently working
     
 # Current working Features in Project
   -Authentication
