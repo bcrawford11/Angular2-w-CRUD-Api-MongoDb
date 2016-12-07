@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,7 +29,7 @@ namespace MongoApi.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{PostId:length(24)}")]
+        [HttpGet("{Id:length(24)}")]
         public IActionResult Get(string id)
         {
             var post = objds.GetPost(new ObjectId(id));
@@ -49,7 +49,7 @@ namespace MongoApi.Controllers
         }
 
         // PUT api/values/5
-        [HttpPut("{PostId:length(24)}")]
+        [HttpPut("{Id:length(24)}")]
         public IActionResult Put(string id, [FromBody]Post p)
         {
             var recId = new ObjectId(id);
@@ -63,7 +63,7 @@ namespace MongoApi.Controllers
         }
 
         // DELETE api/values/5
-        [HttpDelete("{PostId:length(24)}")]
+        [HttpDelete("{Id:length(24)}")]
         public IActionResult Delete(string id)
         {
             var post = objds.GetPost(new ObjectId(id));
@@ -71,7 +71,7 @@ namespace MongoApi.Controllers
             {
                 return NotFound();
             }
-            objds.Remove(post._id);
+            objds.Remove(ObjectId.Parse(post.Id));
             return new OkResult();
         }
     }
