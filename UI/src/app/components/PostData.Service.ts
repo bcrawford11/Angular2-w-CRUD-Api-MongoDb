@@ -43,10 +43,10 @@ export class PostDataService{
             .catch(this.handleError);
     }
  
-    public Delete = (_id: number): Observable<Response> => {
-        return this._http.delete(this.actionUrl + _id)
-            .catch(this.handleError);
-    }    
+     public Delete = (id: string) =>{
+       return this._http.delete(this.actionUrl + id)
+          .map(res => res.json());
+    }   
 
      private handleError(error: any) {
         var applicationError = error.headers.get('Application-Error');
