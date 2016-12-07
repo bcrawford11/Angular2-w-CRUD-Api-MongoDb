@@ -1,4 +1,4 @@
-﻿using MongoDB.Bson;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -44,8 +44,7 @@ namespace MongoApi.Models
         }
         public void Remove(ObjectId id)
         {
-            var res = Builders<Post>.Filter.Eq(e => e._id, id);
-            var operation = _db.GetCollection<Post>("post").DeleteOne(res);
+            _db.GetCollection<Post>("post").DeleteOne(a => a._id == id);
         }
     }
 }
