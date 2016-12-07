@@ -31,18 +31,26 @@ export class PostRantComponent implements OnInit {
             () => console.log('get all items complete'))
     }
 
-    addPost(){
+        addPost(){
       this.newPost = new PostViewModel();
       this.newPost.title = this.txtTitle;
       this.newPost.description = this.txtDescription;
       this._dataservice.Add(this.newPost)
       .subscribe((res) => {
+        this.myPosts.unshift(this.newPost);
         this.newPost.title = '';
         this.newPost.description = '';
-      })
+      });
+      
     }
     
-    delete(Post){
-        this._dataservice.Delete;
+    delete(id){
+      console.log(id);
+       this._dataservice.Delete(id)
+        .subscribe((res) => {
+          this.myPosts = res;
+        });
+          var index = this.myPosts.findIndex(x => x.id == id);
+          this.myPosts.splice(index, 1);
    }
 }
